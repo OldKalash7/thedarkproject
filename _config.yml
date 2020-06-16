@@ -27,7 +27,9 @@ twitter_username: betrayer_kalash
 github_username:  OldKalash7
 
 # Build settings
-theme: minima
+# theme: minima
+minima:
+ skin: dark
 plugins:
   - jekyll-feed
 

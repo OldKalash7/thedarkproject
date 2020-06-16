@@ -26,6 +26,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: betrayer_kalash
 github_username:  OldKalash7
 
+minima:
+  skin: dark
+
 # Build settings
 theme: minima
 plugins:

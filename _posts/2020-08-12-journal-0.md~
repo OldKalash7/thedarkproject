@@ -1,0 +1,34 @@
+---
+layout: post
+title:  journal-0-making-it-through-summer
+date:   2020-08-12 23:28:21 +0200
+---
+Hey!! No estoy muerto y el sitio tampoco. La verdad es que han sido unas semanas bastante complicadas y ha costado encontrar la motivación. Hace un par de semanas el ordenador murió (la placa base) y no me quedó más remedio que actualizar algunas piezas. Bueno al menos ahora tengo Ryzen y 16GB de RAM, pero no dinero. Han sido semanas de arreglar cosas, organizar mis archivos de forma obsesivo compulsiva, leer y demás. Solo estos últimos cuatro días he empezado ya a hacer algo. Aunque sinceramente creo que me obsesiono demasiado con "ser productivo" y todo eso. Mis archivos ahora son coherentes y eso significa que mi flujo de trabajo debería mejorar considerablemente.
+
+He vuelto a engancharme a programar y hacer cosas con el pc. En concreto, llevo un tiempo ya trabajando con un amigo en un pequeño proyecto de juego indie que espero que vea la luz algún día. He estado programando un sistema de diálogo que lee archivos JSON para cargar las líneas de diálogo y enseñarlas por pantalla. Está muy verde pero fue genial el cargar las pruebas y ver como funcionaba. Aquí un poco del código escrito en GDScript para el motor Godot:
+
+```func read_file() -> Dictionary:
+	var fichero = File.new()
+	var dialogo
+	fichero.open("res://dialog/test1.json",File.READ)
+	dialogo = parse_json(fichero.get_as_text())
+	fichero.close()
+	return dialogo
+```
+
+Esta función lee un archivo JSON y lo devuelve como un diccionario.
+
+
+He leído bastante pero ahora justo acabo de terminar *Silk* de Caitlín. R. Kiernan. Es una novela de terror ambientada en la subcultura punk y gótica de la américa de los 90. A ratos no sabía si ponerle un diez o si me estaban tomando el pelo. La he terminado justo hoy y la verdad es que todavía no tengo claro si me ha gustado o no, pero creo que ha valido la pena. Hoy me empezaré *La narración de Arthur Gordon Pym* la única novela de Poe, a ver que tal.
+
+Y por favor, de Kiernan leeos si o si *The drowning girl*, ese libro me ha fascinado.
+
+Hoy he estado rematando un pequeño relato que tenía aparcado de hace bastante tiempo. En breves subiré alguno.
+
+Bueno, creo que de momento es todo, en breves subiré alguna historia y seguiré por aquí. A ver si revivo en twitter. Quería enseñaros algunas imágenes y corregir un poco el texto pero me duelen los dedos de teclear hoy y además creo que estoy enfermo (No creo que sea COVID). Así que ya nos leemos a la próxima.
+
+Thanks!
+
+PD: Creo que enlazaré mi goodreads o algo, estoy bastante activo por ahí últimamente.
+
+

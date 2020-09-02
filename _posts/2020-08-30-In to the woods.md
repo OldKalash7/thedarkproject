@@ -19,7 +19,7 @@ There was two of them wearing in black clothes and with masks and visors, the ey
 
 "So the old man was right, you found it, a shame for you" Said one of them with a hollow voice product of the mask.
 
-"Danm they all, that liar bastard also told them" Thought Ratz.
+"Damn they all, that liar bastard also told them" Thought Ratz.
 
 "You know, the old folks tell that once in a while" He opened the arms making a cross. "All this place, the structure of the woods changes, and the rats get trapped inside, get lost, and die."
 

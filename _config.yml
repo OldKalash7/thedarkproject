@@ -27,11 +27,12 @@ twitter_username: betrayer_kalash
 github_username:  OldKalash7
 
 minima:
-  skin: solarized
+  skin: dark
 
 # Build settings
 theme: minima
-
+#theme: jekyll-lin
+#theme: papyrus-theme
 plugins:
   - jekyll-feed
 

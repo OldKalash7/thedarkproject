@@ -1,0 +1,36 @@
+---
+layout: default
+title: Home
+---
+
+<div class="container-lg  min-vh-100" id="main-container">
+    <div class="row justify-content-center">
+        <div class="col" id="left-main-column">
+
+            <div class="row px-5 pt-4">
+                <h1 class="titulo pb-2" >Posts recientes</h1>
+                <div class="">
+
+                {% include last_posts.html %}
+                </div>
+            </div>
+
+            <div class="row px-5 p-1">
+                {% for post in site.posts limit:1 %}
+                <a href="{{ post.url }}" class="titulo pb-2 h1" >Último post</a>
+
+
+                <h4 class="pt-3 pb-3">{{ post.title }}</h4>
+
+                {{ post.content }}
+                {% endfor %}
+
+            </div>
+
+        </div>
+        {% include sidebar.html %}
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,9 @@
+
+<ul class="list-group list-group-flush bg-transparent ">
+    {% for post in site.posts limit:5 %}
+    <li class="list-group-item bg-transparent">
+        <h4><a href="{{ post.url }}" class="link-ultimo-post">{{ post.title }}</a></h4>
+        {{ post.excerpt }}
+    </li>
+    {% endfor %}
+</ul>

@@ -2355,7 +2355,7 @@ a.link-ultimo-post:hover { color: #DCDCDC; }
 
 .titulo { border-bottom: 1px solid #D64937; color: #535353; }
 
-.a.titulo:hover { color: #DCDCDC; }
+a.titulo:hover { color: #DCDCDC; }
 
 #titulo-ultimo-post { border-bottom: 1px solid #D64937; color: #535353; }
 

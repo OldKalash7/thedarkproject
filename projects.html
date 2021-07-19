@@ -1,0 +1,38 @@
+---
+layout: default
+title: Projects and stuff
+---
+
+<div class="row mt-5">
+  {% include sidebar.html %}
+  <div class="col-md-9">
+    {% for project in site.projects %}
+    <!--
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+	<h5 class="card-title">Card title</h5>
+	  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+	    <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    -->
+    <div class="row " style="border-style:1px,solid;">
+      <a class="h1" href="{{project.url}}">{{project.title}}</a>
+	<div class="col-md">
+	<img class="card-img" style="max-width: 38rem;" src="/assets/images/test.png" alt="Card image cap">
+      </div>
+      <div class="col-md">
+	<p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+
+    </div>
+
+      
+
+  </div>
+
+    {% endfor %}
+
+    <!--
+      -->         
+</div>

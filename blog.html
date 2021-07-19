@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: archive 
 title: Blog
 
 ---
 
-
+<!--
 <div class="container-lg  min-vh-100 px-5">
     <h1 class="pt-4 " style="border-bottom: none" >Posts recientes</h1>
     <div class="col-8">
@@ -13,18 +13,18 @@ title: Blog
 
     {% for tag in site.tags %}
 
-    <!--
+    
     <a href="" id="tag-title" class="pt-4 pb-2 h2" style="border-bottom: 1px solid #D64937;"
         onclick="return asign_tag(document.getElementById('tag-title').innerHTML);">{{ tag[0] | capitalize}}</a>
 
-    -->
+    
     <h1 id="tag-title" class="pt-4 pb-2 h2" style="border-bottom: 1px solid #D64937;">{{ tag[0] | capitalize}}</h1>
 
     <div class="col text-center pt-3">
-    <!--<ul style="display: inline-flex">-->
+    <ul style="display: inline-flex">
         {% for post in tag[1] %}
 
-        <!--<li class="list-group-item bg-transparent"></li>-->
+        <li class="list-group-item bg-transparent"></li>
 
         <h4 class="px-2" style="display: inline-flex; "><a style="color: #D64937" href="{{ post.url }}" >{{ post.title }}</a></h4>
 
@@ -33,7 +33,7 @@ title: Blog
         {% endfor %}
 
 </div>
-
+-->
 
 
 

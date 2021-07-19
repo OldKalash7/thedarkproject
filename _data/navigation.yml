@@ -2,7 +2,13 @@
   link: /
 
 - name: Blog
-  link: /blog.html
+  link: /blog/index.html
 
 - name: Roadmap
   link: /roadmap.html
+
+- name: About
+  link: /about.html
+
+- name: My stuff
+  link: /projects.html

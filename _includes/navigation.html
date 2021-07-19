@@ -1,20 +1,28 @@
-<div class="" id="navegacion">
-  <div class="nav navbar-light">
 
-      {% include navbarbrand.html %}
+<!--NAVIGATION AND MAIN NAVBAR -->
 
-
-      <ul class="nav justify-content-center">
-            {% for item in site.data.navigation %}
-          <li class="nav-item  mx-auto">
-            <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
-          </li>
-            {% endfor %}
-        </ul>
-      </div>
+<!--
+<div class="row">
+  <a style="color:#8fff6d;"class="display-2 text-center"> computer_stories</a>
 </div>
+-->
+<div class="row justify-content-center">
 
+<ul class="nav flex-column">
+  {% for item in site.data.navigation %}
 
+  {% if item.name == "Blog" %}
+ <li class="nav-item">
+    <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+  </li>
 
+  
+  {% else %}
+<li class="nav-item">
+    <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+  </li>
 
-
+  {% endif %}
+    {% endfor %}
+</ul>
+</div>

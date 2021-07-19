@@ -4,5 +4,8 @@
 @import "main";
 
 
-
+// Pagination
+.pagination>li.active>a {
+  background-color: orange !important;
+}
 

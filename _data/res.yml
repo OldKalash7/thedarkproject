@@ -1,2 +1,6 @@
-- name: titulo
-  title: The Dark Project
+
+- name: Github
+  url: <>
+
+- name: Feed
+  url: baseurl/feed.xml

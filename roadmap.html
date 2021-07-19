@@ -2,6 +2,9 @@
 layout: default
 title: Roadmap
 ---
+
+<!--
+
 <div class="container-lg min-vh-100">
 
     <div class="row px-5 pt-4">
@@ -27,4 +30,16 @@ title: Roadmap
 
 
 
+</div>
+-->
+
+<div class="row mt-5">
+  {% include sidebar.html %}
+
+  <div class="col-md-9">
+    {% for post in site.categories.roadmap %}
+    <h1>{{post.title}}</h1>
+    {{post.content}}
+    {% endfor %}
+  </div>
 </div>

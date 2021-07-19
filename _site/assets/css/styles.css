@@ -1,4 +1,6 @@
 /*! Bootstrap v5.0.0-beta1 (https://getbootstrap.com/) Copyright 2011-2020 The Bootstrap Authors Copyright 2011-2020 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
 :root { --bs-blue: #0d6efd; --bs-indigo: #6610f2; --bs-purple: #6f42c1; --bs-pink: #d63384; --bs-red: #dc3545; --bs-orange: #fd7e14; --bs-yellow: #ffc107; --bs-green: #198754; --bs-teal: #20c997; --bs-cyan: #0dcaf0; --bs-white: #fff; --bs-gray: #6c757d; --bs-gray-dark: #343a40; --bs-primary: #0d6efd; --bs-secondary: #6c757d; --bs-success: #198754; --bs-info: #0dcaf0; --bs-warning: #ffc107; --bs-danger: #dc3545; --bs-light: #f8f9fa; --bs-dark: #212529; --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -2325,42 +2327,24 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 @media print { .d-print-inline { display: inline !important; } .d-print-inline-block { display: inline-block !important; } .d-print-block { display: block !important; } .d-print-grid { display: grid !important; } .d-print-table { display: table !important; } .d-print-table-row { display: table-row !important; } .d-print-table-cell { display: table-cell !important; } .d-print-flex { display: flex !important; } .d-print-inline-flex { display: inline-flex !important; } .d-print-none { display: none !important; } }
 
-#brand { font-family: "Fira Code", monospace; size: 2em; }
+#main-title { font-family: "Roboto Mono", monospace; }
 
-ul.nav li a, ul.nav li a:visited { color: #2D2D2D; }
+.nav-link, .nav-link:hover, .nav-link:visited, .highlight { color: #8fff6d; }
 
-ul.nav li a:hover, ul.nav li a:active { color: #DCDCDC; }
+a { text-decoration: none; }
 
-ul.nav li.active a { color: #2D2D2D; }
+a:link { color: #8fff6d; }
 
-#navegacion { background-color: #D64937; }
+a:visited { color: #E0E0E0; }
 
-.list-group-item { border-bottom: 1px solid #2D2D2D; }
+#current-page { color: #8fff6d; }
 
-a, u { text-decoration: none; }
+.project-card { background-color: red; }
 
-h1, .h1 { border-bottom: 1px solid #D64937; color: #535353; }
+.title { color: #8fff6d; }
 
-.link-ultimo-post { color: #D64937; }
+body { color: #C0C0C0; background-color: #0f191f; font-size: 20px; font-family: "Roboto", sans-serif; }
 
-a.link-ultimo-post:visited { color: #535353; }
-
-a.link-ultimo-post:hover { color: #DCDCDC; }
-
-.lista-ultimos-post a:hover a:active { color: #DCDCDC; }
-
-.list-group-item:hover { background-color: #2D2D2D; }
-
-.lista-ultimos-post { background-color: #2D2D2D; }
-
-.titulo { border-bottom: 1px solid #D64937; color: #535353; }
-
-a.titulo:hover { color: #DCDCDC; }
-
-#titulo-ultimo-post { border-bottom: 1px solid #D64937; color: #535353; }
-
-body { color: #DCDCDC; background-color: #2D2D2D; }
-
-h1, .h1 { padding-top: 5px; }
+.pagination > li.active > a { background-color: orange !important; }
 
 /*# sourceMappingURL=styles.css.map */

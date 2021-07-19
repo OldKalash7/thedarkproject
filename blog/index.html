@@ -1,0 +1,39 @@
+---
+layout: default
+title: Blog
+---
+<div class="row mt-5">
+  {% include sidebar.html %}
+  <div class="col-md-9">
+
+<ul class="list-unstyled"> 
+
+ {% for post in paginator.posts %}
+ <li style="border:none;" class="">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+
+</ul>
+
+  <div class="d-flex flex-row-reverse">
+    <ul class="list-inline">
+
+    {% if paginator.previous_page %}
+    <li class="list-inline-item"><a class="" href="{{paginator.previous_page_path}}">{{paginator.previous_page}}</a></li>
+    {% endif %}
+    
+    <li class="list-inline-item"><a id="current-page" href="">{{paginator.page}}</a></li>
+     
+    {% if paginator.next_page %} 
+    <li class="list-inline-item"><a class="" href="{{paginator.next_page_path}}">{{paginator.next_page}}</a></li>
+    {% endif %}
+
+    </ul>
+  </div>
+
+  </div>
+</div>
+
+
+

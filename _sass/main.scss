@@ -1,105 +1,66 @@
 
-#brand{
-  font-family: "Fira Code", monospace;
-  size: 2em;
-}
 
-ul.nav li a, ul.nav li a:visited {
-  color: #2D2D2D;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+$base-background: #0f191f;
+$base-highlight: #8fff6d;
+$base-titles: #E0E0E0;
 
-ul.nav li a:hover, ul.nav li a:active {
-  color: #DCDCDC ;
 
-}
 
-ul.nav li.active a {
-  color: #2D2D2D;
+
+
+#main-title{
+  font-family: "Roboto Mono", monospace;
 }
 
 
 
-#navegacion{
-  //background-color: $purple-700;
-  background-color: #D64937;
-  //background-color:#b58900;
+.nav-link,.nav-link:hover,.nav-link:visited,.highlight {
+  color: $base-highlight;
+
 }
 
-.list-group-item{
-  border-bottom: 1px solid #2D2D2D;
-}
-
-
-a, u {
+a
+{
   text-decoration: none;
 }
 
+a:link 
+{
+  color: $base-highlight;
+}
 
-h1{
-  border-bottom: 1px solid #D64937;
-  color: #535353;
+a:visited 
+{
+  color: $base-titles;
+}
+
+#current-page
+{
+  color: $base-highlight
+}
+.project-card
+{
+ background-color:red;
 }
 
 
-.link-ultimo-post {
-  color: #D64937;
+
+.title{
+  
+  color: #8fff6d;
 }
-
-a.link-ultimo-post:visited{
-  color: #535353;
-}
-
-a.link-ultimo-post:hover {
-  color: #DCDCDC;
-}
-
-
-a:hover {
-  //color: yellow !important;
-}
-
-.lista-ultimos-post a:hover a:active{
-  color: #DCDCDC;
-
-}
-.list-group-item:hover{
-  background-color: #2D2D2D;
-}
-
-.lista-ultimos-post  {
-  background-color: #2D2D2D;
-}
-
-
-.titulo{
-  border-bottom: 1px solid #D64937;
-  color: #535353;
-
-}
-a.titulo:hover{
-  color: #DCDCDC;
-}
-
-#titulo-ultimo-post{
-  border-bottom: 1px solid #D64937;
-  color: #535353;
-}
-
-
-#main-container{
-
-}
-
 
 body {
-  color: #DCDCDC;
-  background-color: #2D2D2D;
+  color: #C0C0C0;
+  background-color: $base-background;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  //background-color: #2D2D2D;
   //background-color: $gray-300;
   //background-color: #fdf6e3 ;
   //background-image: linear-gradient(black, grey);
 }
 
 
-h1{
-  padding-top: 5px;
-}

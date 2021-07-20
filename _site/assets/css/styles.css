@@ -2339,7 +2339,7 @@ a:visited { color: #E0E0E0; }
 
 #current-page { color: #8fff6d; }
 
-.project-card { background-color: red; }
+.paginator-link, .paginator-link:visited { color: #E0E0E0; }
 
 .title { color: #8fff6d; }
 

@@ -1,3 +1,7 @@
+baseurl: /thedarkproject
+url: http://OldKalash7.github.io
+
+
 defaults:
   - scope:
       path: ""

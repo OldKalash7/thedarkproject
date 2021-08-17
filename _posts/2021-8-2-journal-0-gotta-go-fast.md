@@ -1,7 +1,7 @@
 ---
 layout: post
 tag: journal,rust,godot,jam,gamedev
-title: 0-Journal Gotta go fast!
+title: Journal-0 Gotta go fast!
 author: River
 ---
 

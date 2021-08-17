@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-02T23:20:09+02:00</updated><id>/feed.xml</id><entry><title type="html">0-Journal Gotta go fast!</title><link href="/2021/08/02/journal-0-gotta-go-fast.html" rel="alternate" type="text/html" title="0-Journal Gotta go fast!" /><published>2021-08-02T00:00:00+02:00</published><updated>2021-08-02T00:00:00+02:00</updated><id>/2021/08/02/journal-0-gotta-go-fast</id><content type="html" xml:base="/2021/08/02/journal-0-gotta-go-fast.html">&lt;figure class=&quot;figure&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-17T22:15:12+02:00</updated><id>/feed.xml</id><entry><title type="html">Journal-1 Coming along nicely?</title><link href="/2021/08/17/coming-along-nicely.html" rel="alternate" type="text/html" title="Journal-1 Coming along nicely?" /><published>2021-08-17T00:00:00+02:00</published><updated>2021-08-17T00:00:00+02:00</updated><id>/2021/08/17/coming-along-nicely</id><content type="html" xml:base="/2021/08/17/coming-along-nicely.html">&lt;figure class=&quot;figure&quot;&gt;
+  &lt;img src=&quot;/assets/images/pictures/2.jpg&quot; class=&quot;figure-img img-fluid rounded&quot; alt=&quot;night&quot; /&gt;
+  &lt;figcaption class=&quot;figure-caption text-center&quot;&gt;Unknown position&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I’m not dead yet, just a quick update.&lt;/p&gt;
+
+&lt;p&gt;The job it’s going well so far. I’ve been busy doing adult stuff and giving myself some time i needed. It’s quite complicate to balance your personal life, job, hobbies and friends.&lt;/p&gt;
+
+&lt;p&gt;I’ve been keeping with learning Rust. I’m just going slower with it. I really like the language but it’s tricky. Specially all the tings related to borrowing and how the language manages memory on reference types. Although, the thing that I have been struggling the most it’s code organization. I’m still waiting the get the grasp of it, how to use modules and structure the project in different files. I come from a background heavy on OOP and Java, which organizes code via hierarchies, classes and packages. Rust it’s quite different in that regard, but I like it. Sooner or later I will understand. With patience.&lt;/p&gt;
+
+&lt;p&gt;This block of code won’t compile in Rust. At first glance it should. But It won’t because how Rust manages memory. See, the owner of the reference type s it’s the main function. When main calls the get_len() function and passes around the s variable it’s also transferring the ownership of that variable to the get_len() function. Unless get_len() returns the value, cannot use s anymore. That’s one of the may quirks of Rust. For now I like it enough.&lt;/p&gt;
+
+&lt;div class=&quot;language-rust highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;test&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;nf&quot;&gt;get_len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;nd&quot;&gt;println!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;fn&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i32&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;.len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;On the other hand &lt;em&gt;Craptcha&lt;/em&gt; the game I’m polishing in order to publish it’s coming along nicely. But I’m the only programmer on it right now and it’s a bit cumbersome. Specially because it has a lot of UI stuff an managing what is visible to the player and what not etc… I’m making progress but a bit every time. No screenshots for now, but soon, the game will be available to play.&lt;/p&gt;
+
+&lt;p&gt;Also, I have created a new twitter account. Later I will update the link a the top of the page.&lt;/p&gt;
+
+&lt;p&gt;Take care.&lt;/p&gt;</content><author><name>River</name></author><category term="journal, rust, gamedev" /><summary type="html">Unknown position</summary></entry><entry><title type="html">Journal-0 Gotta go fast!</title><link href="/2021/08/02/journal-0-gotta-go-fast.html" rel="alternate" type="text/html" title="Journal-0 Gotta go fast!" /><published>2021-08-02T00:00:00+02:00</published><updated>2021-08-02T00:00:00+02:00</updated><id>/2021/08/02/journal-0-gotta-go-fast</id><content type="html" xml:base="/2021/08/02/journal-0-gotta-go-fast.html">&lt;figure class=&quot;figure&quot;&gt;
   &lt;img src=&quot;/assets/images/pictures/1.jpg&quot; class=&quot;figure-img img-fluid rounded&quot; alt=&quot;night&quot; /&gt;
   &lt;figcaption class=&quot;figure-caption text-center&quot;&gt;Moon at night&lt;/figcaption&gt;
 &lt;/figure&gt;
